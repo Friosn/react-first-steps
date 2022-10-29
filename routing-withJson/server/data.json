@@ -1,0 +1,28 @@
+{
+  "characters": [
+    {
+      "name": "Clancy Gilroy",
+      "image": "https://pbs.twimg.com/profile_images/1256434170131251201/p0iRorQP_400x400.jpg",
+      "chapter": "All of them",
+      "planet": "Rainbow Farm",
+      "voice": "Duncan Trussel",
+      "id": "dda9238b-c867-4b20-a608-1422685d9dc1"
+    },
+    {
+      "name": "Clancy Gilroy",
+      "image": "https://pbs.twimg.com/profile_images/1256434170131251201/p0iRorQP_400x400.jpg",
+      "chapter": "All of them",
+      "planet": "Rainbow Farm",
+      "voice": "Duncan Trussel",
+      "id": "8a64e57a-bb58-4581-bed8-1f1cae288d3e"
+    },
+    {
+      "name": "Francisco Ríos Niño",
+      "image": "sdfsafd",
+      "chapter": "sadf",
+      "planet": "asdf",
+      "voice": "dsf",
+      "id": "e905453d-6881-4c3a-91a5-71b653524e85"
+    }
+  ]
+}

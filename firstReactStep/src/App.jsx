@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import { CharacterList } from "./components/characterList";
-import { charactersMock } from "./components/characterData";
+import { CharacterList } from "./components/CharacterList";
+
 
 const App = () => {
   return <CharacterList />;
