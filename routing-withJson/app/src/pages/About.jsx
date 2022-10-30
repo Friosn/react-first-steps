@@ -10,6 +10,7 @@ const About = () => {
       <img
         src="https://media0.giphy.com/media/TFUd6cS3rc4qcaS5T8/200w.gif?cid=82a1493bxm8ro4ddx0tvqk37ab577jjog59rqaz2w4gzbp9q&rid=200w.gif&ct=g"
         name="Clancy inside the multiverse-simulator"
+        className="customRandom"
       />
     </div>
   );
