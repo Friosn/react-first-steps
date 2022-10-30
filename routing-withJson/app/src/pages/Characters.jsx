@@ -7,9 +7,9 @@ import { v4 as uuidv4 } from "uuid";
 const Characters = () => {
   const [name, setName] = React.useState("");
   const [image, setImage] = React.useState("");
-  const [chapter, setChapter] = React.useState("");
+  const [likes, setLikes] = React.useState("");
   const [planet, setPlanet] = React.useState("");
-  const [voice, setVoice] = React.useState("");
+  const [quote, setQuote] = React.useState("");
   const [characters, setCharacters] = React.useState({});
 
   useEffect(() => {
@@ -19,7 +19,6 @@ const Characters = () => {
       console.log(res);
       setCharacters(res);
     };
-    const characterList = getCharacters();
     getCharacters();
   }, []);
 
@@ -30,9 +29,9 @@ const Characters = () => {
     const character = {
       name: name,
       image: image,
-      chapter: chapter,
+      likes: likes,
       planet: planet,
-      voice: voice,
+      quote: quote,
       id: uuidv4(),
     };
     postCharacter(character);
@@ -50,42 +49,52 @@ const Characters = () => {
     <div>
       <form onSubmit={(ev) => createCharacter(ev)}>
         <fieldset>
-          <legend>Introduce a character</legend>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            onChange={(ev) => setName(ev.target.value)}
-          />
-          <label htmlFor="image">Image:</label>
-          <input
-            type="text"
-            name="image"
-            id="image"
-            onChange={(ev) => setImage(ev.target.value)}
-          />
-          <label htmlFor="chapter">Chapter:</label>
-          <input
-            type="text"
-            name="chapter"
-            id="chapter"
-            onChange={(ev) => setChapter(ev.target.value)}
-          />
-          <label htmlFor="planet">Planet:</label>
-          <input
-            type="text"
-            name="planet"
-            id="planet"
-            onChange={(ev) => setPlanet(ev.target.value)}
-          />
-          <label htmlFor="voice">Voice by:</label>
-          <input
-            type="text"
-            name="voice"
-            id="voice"
-            onChange={(ev) => setVoice(ev.target.value)}
-          />
+          <legend>Characterize your idea</legend>
+          <div className="labelInput">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              onChange={(ev) => setName(ev.target.value)}
+            />
+          </div>
+          <div className="labelInput">
+            <label htmlFor="image">Image:</label>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              onChange={(ev) => setImage(ev.target.value)}
+            />
+          </div>
+          <div className="labelInput">
+            <label htmlFor="likes">Loves:</label>
+            <input
+              type="text"
+              name="likes"
+              id="likes"
+              onChange={(ev) => setLikes(ev.target.value)}
+            />
+          </div>
+          <div className="labelInput">
+            <label htmlFor="planet">Planet:</label>
+            <input
+              type="text"
+              name="planet"
+              id="planet"
+              onChange={(ev) => setPlanet(ev.target.value)}
+            />
+          </div>
+          <div className="labelInput">
+            <label htmlFor="voice">Quote:</label>
+            <input
+              type="text"
+              name="quote"
+              id="quote"
+              onChange={(ev) => setQuote(ev.target.value)}
+            />
+          </div>
         </fieldset>
         <input type="submit" value="Create" />
       </form>

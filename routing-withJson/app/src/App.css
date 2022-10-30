@@ -39,3 +39,40 @@
 .read-the-docs {
   color: #888;
 }
+#root {
+  padding-top: 8px;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 5.5rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem 3.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+
+}
+.charactersGallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+fieldset {
+  min-width: fit-content;
+}
+header {
+  margin-bottom: 5rem;
+}
+.homie {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

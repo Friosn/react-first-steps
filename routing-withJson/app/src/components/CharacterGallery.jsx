@@ -4,9 +4,9 @@ import React from "react";
 const CharactersGallery = ({ characters }) => {
   return (
     <div className="charactersGallery">
-      <h2>Gallery</h2>
+      <h2>⬇️ Gallery ⬇️</h2>
       <div className="gallery">
-        {characters.name ? (
+        {characters.length ? (
           characters.map((character) => (
             <figure key={character.id}>
               <Link to={`/characters/${character.id}`}>
@@ -15,7 +15,7 @@ const CharactersGallery = ({ characters }) => {
             </figure>
           ))
         ) : (
-          <p>There is not such a Character yet</p>
+          <p>There is not such a Character... yet 😉</p>
         )}
       </div>
     </div>

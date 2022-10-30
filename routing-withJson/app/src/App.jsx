@@ -6,10 +6,12 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Midnight Gospel</h1>
-      </header>
       <NavBar />
+      <header>
+        <h1>Avatar Generator</h1>
+        <h2 className="emoji">🧟‍♀️🤖👽👻👹🦝🧞‍♀️</h2>
+      </header>
+
       <main>
         <Outlet />
       </main>

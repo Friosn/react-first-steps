@@ -6,6 +6,7 @@ const Character = () => {
 
   const params = useParams();
   const { id } = params;
+  console.log(id);
 
   useEffect(() => {
     const getCharacters = async () => {
@@ -23,8 +24,8 @@ const Character = () => {
           <img src={character.image} />
           <h3>{character.name}</h3>
           <h5>{character.planet}</h5>
-          <h5>{character.voice}</h5>
-          <h5>{character.chapter}</h5>
+          <h5>{character.quote}</h5>
+          <h5>{character.likes}</h5>
         </figure>
       ) : (
         <p>This is not a Character from this TV Show</p>
