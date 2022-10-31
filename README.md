@@ -1,2 +1,2 @@
 # react-first-steps
-First proyect and exercises with react
+First proyect and exercises with react 🤖
