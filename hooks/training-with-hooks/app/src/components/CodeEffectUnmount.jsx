@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 
-import { MessageComp } from './components/MessageComp';
+import { MessageComp } from './MessageComp';
 
 export const CodeEffectUnmount = () => {
   const [visible, setVisible] = useState(false);

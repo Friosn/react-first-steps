@@ -1,5 +1,12 @@
 {
   "characters": [
-   
+    {
+      "name": "Clancy Gilroy",
+      "image": "https://pbs.twimg.com/profile_images/1256434170131251201/p0iRorQP_400x400.jpg",
+      "likes": "Eating Pizza",
+      "planet": "Rainbow Farm",
+      "quote": "Are you up to come to my spaceCast?",
+      "id": "b2521abf-0fa2-48f8-afa2-6e4344d1ed55"
+    }
   ]
 }
