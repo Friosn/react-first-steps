@@ -8,6 +8,7 @@ import { EffectOnLoad } from './components/EffectOnLoad';
 import { CodeEffectUnmount } from './components/CodeEffectUnmount';
 import { CodeEffectUpdate, NewMessageComp } from './components/CodeEffectUpdate';
 import CodeFetchingInput from './components/CodeFetchingInput';
+import FatherMovieReview from './components/React.memo/FatherMovieReview';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <NewMessageComp />
       <CodeEffectUpdate />
       <CodeFetchingInput />
+      <FatherMovieReview />
     </div>
   );
 };
